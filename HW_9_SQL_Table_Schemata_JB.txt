@@ -1,0 +1,68 @@
+CREATE TABLE departments (
+	dept_no VARCHAR(255) NOT NULL,
+	dept_name VARCHAR(255) NOT NULL
+	);
+	
+SELECT * FROM departments
+
+CREATE TABLE dept_emp (
+	emp_no INT,
+	dept_no VARCHAR(255) NOT NULL,
+	from_date VARCHAR(255) NOT NULL,
+	to_date VARCHAR(255) NOT NULL
+	);
+	
+SELECT * FROM dept_emp
+
+CREATE TABLE dept_manager (
+	dept_no VARCHAR(255),
+	emp_no INT,
+	from_date VARCHAR(255),
+	TO_DATE VARCHAR(255)
+	);
+	
+SELECT * FROM dept_manager
+
+CREATE TABLE employees (
+	emp_no INT,
+	birth_date VARCHAR(255),
+	first_name VARCHAR(255),
+	last_name VARCHAR(255),
+	gender VARCHAR(255), 
+	hire_date VARCHAR(255)
+	);
+	
+SELECT * FROM employees
+
+CREATE TABLE salaries (
+	emp_no INT,
+	salary INT NOT NULL,
+	from_date VARCHAR(255),
+	to_date VARCHAR(255)
+	);
+	
+SELECT * FROM salaries
+
+CREATE TABLE titles (
+	emp_no INT,
+	title VARCHAR(255),
+	from_date VARCHAR(255),
+	to_date VARCHAR(255)
+	);
+	
+SELECT * FROM titles
+
+--confirmation that data was imported properly
+
+SELECT * from departments
+
+SELECT * FROM dept_emp
+
+SELECT * FROM dept_manager
+
+SELECT * FROM employees
+
+SELECT * FROM salaries
+
+SELECT * FROM titles
+	
